@@ -4,34 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Реєстрація на онлайн-курс</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
-
-    <header>
-        <h1>Реєстрація на онлайн-курс</h1>
-        <p>Заповніть форму нижче для запису на навчальну програму.</p>
+<body class="page-form">
+    <a class="skip" href="#main">До змісту</a>
+    <header class="site-bar">
+        <nav aria-label="Сторінки сайту">
+            <a href="portfolio.html">Портфоліо</a>
+            <a href="index.html">Моє хобі</a>
+            <a href="form.html" aria-current="page">Курс</a>
+        </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="main" class="form-shell">
+        <header class="hero page-hero">
+            <h1>Реєстрація на онлайн-курс</h1>
+            <p class="lede">Заповніть форму нижче для запису на навчальну програму.</p>
+        </header>
+
+        <section class="panel">
             <h2>Анкета студента</h2>
-
-            <form action="#" method="post">
-                <p>
-                    <label for="first-name">Ім'я:</label>
-                    <input type="text" id="first-name" name="firstName" placeholder="Введіть ваше ім'я" required>
+            <form class="form-grid" action="#" method="post">
+                <p class="field">
+                    <label for="first-name">Ім'я</label>
+                    <input type="text" id="first-name" name="firstName" placeholder="Введіть ваше ім'я" required autocomplete="given-name">
                 </p>
-
-                <p>
-                    <label for="last-name">Прізвище:</label>
-                    <input type="text" id="last-name" name="lastName" placeholder="Введіть ваше прізвище" required>
+                <p class="field">
+                    <label for="last-name">Прізвище</label>
+                    <input type="text" id="last-name" name="lastName" placeholder="Введіть ваше прізвище" required autocomplete="family-name">
                 </p>
-
-                <p>
-                    <label for="user-email">Електронна пошта (Email):</label>
-                    <input type="email" id="user-email" name="email" placeholder="example@mail.com" required>
+                <p class="field">
+                    <label for="user-email">Електронна пошта (Email)</label>
+                    <input type="email" id="user-email" name="email" placeholder="example@mail.com" required autocomplete="email">
                 </p>
-                <p>
+                <p class="actions">
                     <button type="submit">Надіслати заявку</button>
                 </p>
             </form>
@@ -39,4 +48,3 @@
     </main>
 </body>
 </html>
-

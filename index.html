@@ -4,27 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моє хобі — Китайський чай</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
+<body class="page-hobby">
+    <a class="skip" href="#main">До змісту</a>
+    <header class="site-bar">
+        <nav aria-label="Сторінки сайту">
+            <a href="portfolio.html">Портфоліо</a>
+            <a href="index.html" aria-current="page">Моє хобі</a>
+            <a href="form.html">Курс</a>
+        </nav>
+    </header>
 
-    <h1>Моє хобі — китайський чай</h1>
+    <main id="main" class="wrap">
+        <header class="hero">
+            <h1>Моє хобі — китайський чай</h1>
+        </header>
 
-    <h2>Чому мені це подобається</h2>
-    <p>Мені подобається китайський чай через його насичений смак і відчутний ефект. На відміну від звичайного чаю з супермаркету, кожен сорт тут по-своєму впливає на стан і настрій.</p>
-    <p>Сам процес заварювання допомагає зробити паузу протягом дня, переключитися між задачами і налаштуватися на потрібний ритм.</p>
+        <div class="tea-layout">
+            <section class="panel">
+                <h2>Чому мені це подобається</h2>
+                <p>Мені подобається китайський чай через його насичений смак і відчутний ефект. На відміну від звичайного чаю з супермаркету, кожен сорт тут по-своєму впливає на стан і настрій.</p>
+                <p>Сам процес заварювання допомагає зробити паузу протягом дня, переключитися між задачами і налаштуватися на потрібний ритм.</p>
 
-    <h2>Мої улюблені сорти</h2>
-    <p>Залежно від того, який ефект мені потрібен, я обираю різні види чаю:</p>
+                <h2>Мої улюблені сорти</h2>
+                <p>Залежно від того, який ефект мені потрібен, я обираю різні види чаю:</p>
+                <ul class="tea-list">
+                    <li>Шу Пуер та чайна смола — чудово бадьорять, тонізують і швидко приводять у робочий стан зранку.</li>
+                    <li>Да Хун Пао — темний улун із м'яким прогріваючим смаком, який добре заспокоює та знімає напругу ввечері.</li>
+                    <li>Габа улун — допомагає зібратися з думками і спокійно сфокусуватися на роботі чи навчанні.</li>
+                </ul>
+                <p>Зазвичай я замовляю нові сорти в <a href="https://clubpuer.com.ua/" target="_blank" rel="noopener noreferrer">інтернет-магазині Club Puer</a>.</p>
+            </section>
 
-    <ul>
-        <li>Шу Пуер та чайна смола — чудово бадьорять, тонізують і швидко приводять у робочий стан зранку.</li>
-        <li>Да Хун Пао — темний улун із м'яким прогріваючим смаком, який добре заспокоює та знімає напругу ввечері.</li>
-        <li>Габа улун — допомагає зібратися з думками і спокійно сфокусуватися на роботі чи навчанні.</li>
-    </ul>
-
-    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Традиційне заварювання китайського чаю" width="450">
-
-    <p>Зазвичай я замовляю нові сорти в <a href="https://clubpuer.com.ua/" target="_blank">інтернет-магазині Club Puer</a>.</p>
-
+            <figure class="tea-photo">
+                <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1200&q=80" alt="Традиційне заварювання китайського чаю" width="600" height="800">
+            </figure>
+        </div>
+    </main>
 </body>
 </html>
